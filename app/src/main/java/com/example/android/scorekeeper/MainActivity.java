@@ -10,12 +10,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     /**
-     *  tracks team A score
+     * tracks team A score
      */
 
     int scoreTeamA = 0;
     /**
-     *  tracks team b score
+     * tracks team b score
      */
 
     int scoreTeamB = 0;
@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -42,17 +41,17 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(0);
 
     }
-/**
- * increase the score by 6
- *
- */
 
-public void scoreTouchDown(View view) {
+    /**
+     * increase the score by 6
+     */
 
-    scoreTeamA = scoreTeamA + 6;
+    public void scoreTouchDown(View view) {
 
-    display(scoreTeamA);
-}
+        scoreTeamA = scoreTeamA + 6;
+
+        display(scoreTeamA);
+    }
 
     /**
      * increase the score for score by 3
@@ -87,6 +86,7 @@ public void scoreTouchDown(View view) {
         ;
 
     }
+
     /**
      * Resets the score for both teams back to 0.
      */
@@ -120,17 +120,18 @@ public void scoreTouchDown(View view) {
 
 
     }
+
     /**
      * increase the score team b by 6
-     *
      */
 
     public void scoreBTouchDown(View view) {
 
-        scoreTeamB= scoreTeamB + 6;
+        scoreTeamB = scoreTeamB + 6;
 
         displayForTeamB(scoreTeamB);
     }
+
     /**
      * increase the score for score by 3
      */
